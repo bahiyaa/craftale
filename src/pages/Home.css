@@ -1,0 +1,27 @@
+.text-wrapper{
+    position: absolute;
+    transform: translate(-50%,-50%);
+   
+    background: #734430 -webkit-gradient(linear,left top,right top, from(#734430),
+    to(#734430),color-stop(0.5,#fff)) 0 0 no-repeat;
+    -webkit-background-size:120px;
+    background-size: 100px;
+    color:rgba(255, 255, 255, 0.1);
+    -webkit-background-clip: text;
+    animation: animate 5s infinite;
+    
+}
+@keyframes animate{
+    0%, 10%{
+        background-position: -1000px;
+    }
+    20%{
+        background-position: top left;
+    }
+    90%{
+        background-position: top right;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}
